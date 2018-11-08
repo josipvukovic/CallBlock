@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12D14774F70B309C7DE4E444 /* Pods_CallBlock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0850EC80C4216DB047F2B29 /* Pods_CallBlock.framework */; };
+		86055FAF219196F30028C66C /* TableViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86055FAE219196F30028C66C /* TableViewControllerX.swift */; };
+		BB5C8C8F1E0AE13300029D74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5C8C8E1E0AE13300029D74 /* AppDelegate.swift */; };
+		BB5C8C941E0AE13300029D74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5C8C921E0AE13300029D74 /* Main.storyboard */; };
+		BB5C8C961E0AE13300029D74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB5C8C951E0AE13300029D74 /* Assets.xcassets */; };
+		BB5C8C991E0AE13300029D74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5C8C971E0AE13300029D74 /* LaunchScreen.storyboard */; };
+		BB5C8CA71E0AF37000029D74 /* NewCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5C8CA61E0AF37000029D74 /* NewCallViewController.swift */; };
+		BB6E17131E171C5B00A2AF91 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6E17121E171C5B00A2AF91 /* CallDirectoryHandler.swift */; };
+		BB6E17171E171C5B00A2AF91 /* CallBlockDirectory.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BB6E17101E171C5B00A2AF91 /* CallBlockDirectory.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E2589D94F5B27D500B269D3B /* Pods_CallBlockDirectory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0EF788728B3D13BB630B1A /* Pods_CallBlockDirectory.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB6E17151E171C5B00A2AF91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB5C8C831E0AE13300029D74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB6E170F1E171C5B00A2AF91;
+			remoteInfo = HotlineDirectory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB6E171B1E171C5B00A2AF91 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BB6E17171E171C5B00A2AF91 /* CallBlockDirectory.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B0EF788728B3D13BB630B1A /* Pods_CallBlockDirectory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CallBlockDirectory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		437E710A176343AFFE92B5A3 /* Pods-CallBlockDirectory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlockDirectory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlockDirectory/Pods-CallBlockDirectory.debug.xcconfig"; sourceTree = "<group>"; };
+		4BF0E1AF02580A9B79C2738D /* Pods-CallBlock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlock.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlock/Pods-CallBlock.release.xcconfig"; sourceTree = "<group>"; };
+		86055FAA2190B8D20028C66C /* CallBlockDirectory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallBlockDirectory.entitlements; sourceTree = "<group>"; };
+		86055FAB2190B8DB0028C66C /* CallBlock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallBlock.entitlements; sourceTree = "<group>"; };
+		86055FAE219196F30028C66C /* TableViewControllerX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerX.swift; sourceTree = "<group>"; };
+		A84BAE93857885A709651D13 /* Pods-CallBlock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlock/Pods-CallBlock.debug.xcconfig"; sourceTree = "<group>"; };
+		B0850EC80C4216DB047F2B29 /* Pods_CallBlock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CallBlock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5C8C8B1E0AE13300029D74 /* CallBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5C8C8E1E0AE13300029D74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB5C8C931E0AE13300029D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB5C8C951E0AE13300029D74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB5C8C981E0AE13300029D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB5C8C9A1E0AE13300029D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5C8CA61E0AF37000029D74 /* NewCallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCallViewController.swift; sourceTree = "<group>"; };
+		BB6E17101E171C5B00A2AF91 /* CallBlockDirectory.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallBlockDirectory.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB6E17121E171C5B00A2AF91 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		BB6E17141E171C5B00A2AF91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB974F878CB1AED7E4171558 /* Pods-CallBlockDirectory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlockDirectory.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlockDirectory/Pods-CallBlockDirectory.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB5C8C881E0AE13300029D74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D14774F70B309C7DE4E444 /* Pods_CallBlock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB6E170D1E171C5B00A2AF91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2589D94F5B27D500B269D3B /* Pods_CallBlockDirectory.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D908B2EF74DF93445644D0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0850EC80C4216DB047F2B29 /* Pods_CallBlock.framework */,
+				2B0EF788728B3D13BB630B1A /* Pods_CallBlockDirectory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EA815FE8D0647A9B9FB92D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A84BAE93857885A709651D13 /* Pods-CallBlock.debug.xcconfig */,
+				4BF0E1AF02580A9B79C2738D /* Pods-CallBlock.release.xcconfig */,
+				437E710A176343AFFE92B5A3 /* Pods-CallBlockDirectory.debug.xcconfig */,
+				EB974F878CB1AED7E4171558 /* Pods-CallBlockDirectory.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB24136B1E16E43B00D8285D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BB5C8C821E0AE13300029D74 = {
+			isa = PBXGroup;
+			children = (
+				BB5C8C8D1E0AE13300029D74 /* CallBlock */,
+				BB6E17111E171C5B00A2AF91 /* CallBlockDirectory */,
+				BB5C8C8C1E0AE13300029D74 /* Products */,
+				5EA815FE8D0647A9B9FB92D3 /* Pods */,
+				2D908B2EF74DF93445644D0E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB5C8C8C1E0AE13300029D74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB5C8C8B1E0AE13300029D74 /* CallBlock.app */,
+				BB6E17101E171C5B00A2AF91 /* CallBlockDirectory.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB5C8C8D1E0AE13300029D74 /* CallBlock */ = {
+			isa = PBXGroup;
+			children = (
+				86055FAB2190B8DB0028C66C /* CallBlock.entitlements */,
+				BB5C8CA21E0AE21F00029D74 /* App */,
+				BB5C8CA01E0AE1EB00029D74 /* UI */,
+				BB5C8CA11E0AE20000029D74 /* Supporting Files */,
+			);
+			path = CallBlock;
+			sourceTree = "<group>";
+		};
+		BB5C8CA01E0AE1EB00029D74 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BB24136B1E16E43B00D8285D /* Views */,
+				BB5C8CA31E0AE24900029D74 /* View Controllers */,
+				BB5C8C921E0AE13300029D74 /* Main.storyboard */,
+				BB5C8C971E0AE13300029D74 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		BB5C8CA11E0AE20000029D74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB5C8C951E0AE13300029D74 /* Assets.xcassets */,
+				BB5C8C9A1E0AE13300029D74 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB5C8CA21E0AE21F00029D74 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BB5C8C8E1E0AE13300029D74 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		BB5C8CA31E0AE24900029D74 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB5C8CA61E0AF37000029D74 /* NewCallViewController.swift */,
+				86055FAE219196F30028C66C /* TableViewControllerX.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BB6E17111E171C5B00A2AF91 /* CallBlockDirectory */ = {
+			isa = PBXGroup;
+			children = (
+				86055FAA2190B8D20028C66C /* CallBlockDirectory.entitlements */,
+				BB6E17121E171C5B00A2AF91 /* CallDirectoryHandler.swift */,
+				BB6E17141E171C5B00A2AF91 /* Info.plist */,
+			);
+			path = CallBlockDirectory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB5C8C8A1E0AE13300029D74 /* CallBlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5C8C9D1E0AE13300029D74 /* Build configuration list for PBXNativeTarget "CallBlock" */;
+			buildPhases = (
+				A5CA560A4647B57B99F7802E /* [CP] Check Pods Manifest.lock */,
+				BB5C8C871E0AE13300029D74 /* Sources */,
+				BB5C8C881E0AE13300029D74 /* Frameworks */,
+				BB5C8C891E0AE13300029D74 /* Resources */,
+				BB6E171B1E171C5B00A2AF91 /* Embed App Extensions */,
+				2F8AF7F1CB16BDB49338BC55 /* [CP] Embed Pods Frameworks */,
+				0CE013202F1DC6E1B1A69D53 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB6E17161E171C5B00A2AF91 /* PBXTargetDependency */,
+			);
+			name = CallBlock;
+			productName = Hotline;
+			productReference = BB5C8C8B1E0AE13300029D74 /* CallBlock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB6E170F1E171C5B00A2AF91 /* CallBlockDirectory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB6E17181E171C5B00A2AF91 /* Build configuration list for PBXNativeTarget "CallBlockDirectory" */;
+			buildPhases = (
+				2600AC2F2676693A0A36AC7D /* [CP] Check Pods Manifest.lock */,
+				BB6E170C1E171C5B00A2AF91 /* Sources */,
+				BB6E170D1E171C5B00A2AF91 /* Frameworks */,
+				BB6E170E1E171C5B00A2AF91 /* Resources */,
+				497FF0997DB2017B30F717C2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallBlockDirectory;
+			productName = HotlineDirectory;
+			productReference = BB6E17101E171C5B00A2AF91 /* CallBlockDirectory.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB5C8C831E0AE13300029D74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					BB5C8C8A1E0AE13300029D74 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CA3DJLRBS8;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					BB6E170F1E171C5B00A2AF91 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = CA3DJLRBS8;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = BB5C8C861E0AE13300029D74 /* Build configuration list for PBXProject "CallBlock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB5C8C821E0AE13300029D74;
+			productRefGroup = BB5C8C8C1E0AE13300029D74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB5C8C8A1E0AE13300029D74 /* CallBlock */,
+				BB6E170F1E171C5B00A2AF91 /* CallBlockDirectory */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB5C8C891E0AE13300029D74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5C8C991E0AE13300029D74 /* LaunchScreen.storyboard in Resources */,
+				BB5C8C961E0AE13300029D74 /* Assets.xcassets in Resources */,
+				BB5C8C941E0AE13300029D74 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB6E170E1E171C5B00A2AF91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CE013202F1DC6E1B1A69D53 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallBlock/Pods-CallBlock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2600AC2F2676693A0A36AC7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CallBlockDirectory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F8AF7F1CB16BDB49338BC55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CallBlock/Pods-CallBlock-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GlitchLabel/GlitchLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GlitchLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallBlock/Pods-CallBlock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		497FF0997DB2017B30F717C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallBlockDirectory/Pods-CallBlockDirectory-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5CA560A4647B57B99F7802E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CallBlock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB5C8C871E0AE13300029D74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5C8CA71E0AF37000029D74 /* NewCallViewController.swift in Sources */,
+				86055FAF219196F30028C66C /* TableViewControllerX.swift in Sources */,
+				BB5C8C8F1E0AE13300029D74 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB6E170C1E171C5B00A2AF91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6E17131E171C5B00A2AF91 /* CallDirectoryHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB6E17161E171C5B00A2AF91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB6E170F1E171C5B00A2AF91 /* CallBlockDirectory */;
+			targetProxy = BB6E17151E171C5B00A2AF91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB5C8C921E0AE13300029D74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB5C8C931E0AE13300029D74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB5C8C971E0AE13300029D74 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB5C8C981E0AE13300029D74 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB5C8C9B1E0AE13300029D74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB5C8C9C1E0AE13300029D74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB5C8C9E1E0AE13300029D74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A84BAE93857885A709651D13 /* Pods-CallBlock.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CallBlock/CallBlock.entitlements;
+				DEVELOPMENT_TEAM = CA3DJLRBS8;
+				INFOPLIST_FILE = "$(SRCROOT)/CallBlock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.callblock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		BB5C8C9F1E0AE13300029D74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BF0E1AF02580A9B79C2738D /* Pods-CallBlock.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CallBlock/CallBlock.entitlements;
+				DEVELOPMENT_TEAM = CA3DJLRBS8;
+				INFOPLIST_FILE = "$(SRCROOT)/CallBlock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.callblock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		BB6E17191E171C5B00A2AF91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 437E710A176343AFFE92B5A3 /* Pods-CallBlockDirectory.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = CallBlockDirectory/CallBlockDirectory.entitlements;
+				DEVELOPMENT_TEAM = CA3DJLRBS8;
+				INFOPLIST_FILE = "$(SRCROOT)/CallBlockDirectory/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.callblock.CallBlockDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		BB6E171A1E171C5B00A2AF91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB974F878CB1AED7E4171558 /* Pods-CallBlockDirectory.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = CallBlockDirectory/CallBlockDirectory.entitlements;
+				DEVELOPMENT_TEAM = CA3DJLRBS8;
+				INFOPLIST_FILE = "$(SRCROOT)/CallBlockDirectory/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.callblock.CallBlockDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB5C8C861E0AE13300029D74 /* Build configuration list for PBXProject "CallBlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5C8C9B1E0AE13300029D74 /* Debug */,
+				BB5C8C9C1E0AE13300029D74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5C8C9D1E0AE13300029D74 /* Build configuration list for PBXNativeTarget "CallBlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5C8C9E1E0AE13300029D74 /* Debug */,
+				BB5C8C9F1E0AE13300029D74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB6E17181E171C5B00A2AF91 /* Build configuration list for PBXNativeTarget "CallBlockDirectory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB6E17191E171C5B00A2AF91 /* Debug */,
+				BB6E171A1E171C5B00A2AF91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB5C8C831E0AE13300029D74 /* Project object */;
+}

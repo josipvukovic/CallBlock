@@ -70,7 +70,7 @@ class CallDirectoryHandler: CXCallDirectoryProvider {
   
     func addIdentificationPhoneNumbers(to context: CXCallDirectoryExtensionContext) throws {
 
-        let phoneNumbers2: [CXCallDirectoryPhoneNumber] = [ +385955250649 ]
+        let phoneNumbers2: [CXCallDirectoryPhoneNumber] = [ 4259501212 ]
         let labels = ["*WARNING* SUSPICIOUS CALL!"]
         
         for (phoneNumber, label) in zip(phoneNumbers2, labels) {
